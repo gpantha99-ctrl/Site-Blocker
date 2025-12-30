@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Site Blocked</title>
+        <link rel="stylesheet" href="blocked.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="icon">🚫</div>
+            <h1>Site Blocked</h1>
+            <div class="site-name" id="siteName"></div>
+            <p>This website has been blocked to help you stay focused and prosuctive.</p>
+            <button onclick="history.back()">Go Back</button>
+        </div>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const site = params.get('site');
+            if (site) {
+                document.getElementById('siteName').textContent = site;
+            }
+        </script>
+    </body>
+</html>
