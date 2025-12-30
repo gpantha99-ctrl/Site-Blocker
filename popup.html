@@ -5,13 +5,78 @@
     <link rel="stylesheet" href="popup.css">
   </head>
   <body>
-    <h2>Site Blocker</h2>
-    <div class="input-group">
-      <input type="text" id="siteInput" placeholder="example.com">
-      <button id="addBtn">Add</button>
+    <div class="header">
+      <h2>Site Blocker</h2>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="toggleBlocking" checked>
+          <span class="slider"></span>
+        </label>
+        <span id="statusText">Blocking Active</span>
+      </div>
     </div>
-    <div id="siteList" class="site-list"></div>
 
-    <script src="popup.js"></script>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="sites">Blocked Sites</button>
+      <button class="tab-btn" data-tab="schedule">Schedule</button>
+      <button class="tab-btn" data-tab="stats">Statistics</button>
+    </div>
+
+    <!-- Blocked Sites Tab -->
+     <div id="sitesTab" class="tab-content active">
+      <div class="input-group">
+        <input type="text" id="siteInput" placeholder="example.com">
+        <button id="addBtn">Add</button>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search blockedsites...">
+      </div>
+
+      <div id="siteList" class="site-list"></div>
+
+      <div class="actions">
+        <button id="exportBtn" class="secondary-btn">Export</button>
+        <button id="importBtn" class="secondary-btn">Import</button>
+        <button id="clearAllBtn" class="danger-btn">Clear All</button>
+      </div>
+     </div>
+
+     <!-- Schedule Tab -->
+      <div id="scheduleTab" class="tab-content">
+        <div id="schedule-container">
+          <div class="schedule-toggle">
+            <label class="switch">
+              <input type="checkbox" id="scheduleToggle">
+              <span class="slider"></span>
+            </label>
+            <span>Enable SChedule Blocking</span>
+          </div>
+
+          <div class="schedule-times">
+            <div class="time-input">
+              <label>Start Time:</label>
+              <input type="time" id="endTime" value="17:00">
+            </div>
+          </div>
+          <button id="saveSchedule" class="primary-btn">Save Schedule</button>
+
+          <div class="schedule-info">
+            <p>Block sites only during specified hours</p>
+            <p>Schedule applies every day</p>
+          </div>
+        </div>
+      </div>
+      <!-- Statistics Tab -->
+       <div id="statsTab" class="tab-content">
+        <div class="stats-container">
+          <h3>Today's Blocked Attempts</h3>
+          <div id="statsContent"></div>
+          <button id="clearStatsBtn" class="secondary-btn">Clear Statistics</button>
+        </div>
+       </div>
+       <input type="file" id="fileInput" accept=".json" style="display: none;">
+
+       <script src="popup.js"></script>
   </body>
 </html>
