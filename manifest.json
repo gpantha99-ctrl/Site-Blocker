@@ -2,11 +2,12 @@
   "manifest_version": 3,
   "name": "Site Blocker",
   "version": "1.0",
-  "description": "Block distracting websites to stay focused",
+  "description": "Block distracting websites to stay focused with schedules and statistics",
   "permissions": [
     "storage",
     "tabs",
-    "webNavigation"
+    "webNavigation",
+    "alarms"
   ],
   "host_permissions": [
     "<all_urls>"
