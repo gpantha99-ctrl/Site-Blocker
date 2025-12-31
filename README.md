@@ -11,7 +11,7 @@ Easy Management - Add and remove sites through a clean pop-up interface
 
 Advanced Features
 
-⏸Pause/Resume - Toggle blocking on/off without removing sites
+Pause/Resume - Toggle blocking on/off without removing sites
 Search - Quickly find sites in your blocked list
 Schedule Blocking - Set specific hours when blocking is active (e.g., 9 AM - 5 PM)
 Statistics - Track how many times you tried visiting blocked sites
