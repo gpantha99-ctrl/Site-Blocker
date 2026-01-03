@@ -1,56 +1,41 @@
-Site Blocker - Chrome Extension
-A powerful and user-friendly Chrome extension to block distracting websites and boost your productivity. Stay focused by blocking social media, news sites, or any website that wastes your time.
-Show Image
-Show Image
-Features
-Core Features
+🚫 Site Blocker - Chrome Extension
 
-Block Websites - Add any website to your block list with one click
-Instant Blocking - Blocked sites redirect to a custom "Site Blocked" page
-Easy Management - Add and remove sites through a clean pop-up interface
+🎯 Overview
+Site Blocker is a feature-rich Chrome extension designed to 
+help you stay focused and productive by blocking distracting 
+websites. Whether you're studying, working, or just trying to 
+break bad browsing habits, Site Blocker gives you the tools 
+you need to take control of your online time.
 
-Advanced Features
+Why Site Blocker?
+🎓 Students - Block social media during study sessions
+💼 Professionals - Eliminate workplace distractions
+🧘 Digital Wellness - Reduce screen time and break doom-scrolling habits
+👨‍💻 Developers - Stay in the zone during deep work
+📚 Writers - Avoid procrastination while creating content
 
-Pause/Resume - Toggle blocking on/off without removing sites
-Search - Quickly find sites in your blocked list
-Schedule Blocking - Set specific hours when blocking is active (e.g., 9 AM - 5 PM)
-Statistics - Track how many times you tried visiting blocked sites
-Export/Import - Backup and share your blocked sites list
-Clear All - Remove all blocked sites at once
-Tabbed Interface - Organized UI with Blocked Sites, Schedule, and Statistics tabs
+Key Highlights
 
-Imstallation
+✅ Instant website blocking          ✅ Schedule-based control
+✅ One-click pause/resume            ✅ Detailed statistics
+✅ Export/Import functionality       ✅ Search blocked sites
+✅ Beautiful modern UI               ✅ Zero performance impact
 
-Method1: Load Unpacked(Development)
-  1. Download the extension files
-      - Download or clone this repository
-      - Extract to a folder on your computer
+✨ Features
 
-  2. Create the required files
-      - manifest.json
-      - background.js
-      - popup.html
-      - popup.css
-      - popup.js
-      - blocked.html
-      - blocked.css
-      - icon16.png, icon48.png, icon128.png
+🎯 Core Blocking Features
+Instant Site Blocking
+Add any website to your blocklist and it's immediently inaccesible.The extension
+Monitors navigation and redirects blocked sites to a custom block page.
 
+// Blocked URLs:
+facebook.com          → Blocked ✅
+www.facebook.com      → Blocked ✅
+m.facebook.com        → Blocked ✅
+facebook.com/anything → Blocked ❌
 
- 3. Load in Chrome
-
-       - Open Chrome and navigate to chrome://extensions/
-       - Enable Developer mode (toggle in top-right corner)
-       - Click Load unpacked
-       - Select the folder containing the extension files
-
-
- 4. Start blocking!
-
-     - Click the extension icon in your toolbar
-     - Add websites you want to block
-     - Stay focused! 
-
-        Stay Focused. Stay Productive. Block Distractions.
-
-         Made by Gaurab Pantha for your focus.
+Smart URL Matching
+Blocks all subdomains automatically
+Works with or without www.
+Handels http/https automatically
+Blocks all paths on the domain
